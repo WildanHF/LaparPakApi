@@ -1,5 +1,5 @@
 
-const db = require('../config/db');
+const db = require("../config/Database.js");
 
 // Mendapatkan semua campaign
 const getAllCampaigns = async () => {

@@ -1,8 +1,8 @@
-import { Sequelize } from "sequelize";
+const { Sequelize } = require("sequelize");
 
-const db = new Sequelize('laperpakk_db','root','',{
+const db = new Sequelize('laperpakk_db', 'root', '', {
     host: "localhost",
     dialect: "mysql"
 });
 
-export default db;
+module.exports = db;

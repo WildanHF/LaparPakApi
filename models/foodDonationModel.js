@@ -1,4 +1,4 @@
-const db = require('../config/db');
+const db = require("../config/Database.js");
 
 // Ambil semua donasi makanan
 const getAllFoodDonations = async () => {

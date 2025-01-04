@@ -1,6 +1,5 @@
 
-
-const db = require('../config/db');
+const db = require("../config/Database.js");
 
 // Tambahkan donasi baru ke campaign tertentu
 const createDonation = async (campaignId, amount) => {
