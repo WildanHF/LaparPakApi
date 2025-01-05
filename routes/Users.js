@@ -9,7 +9,7 @@ router.get('/users', verifyToken, getUsers);
 router.post('/register', Register);
 router.post('/login', Login);
 router.post("/request-reset-password", requestResetPassword);
-router.post("/reset-password", resetPassword);
+router.post("/reset-password/:token", resetPassword);
 
 
 module.exports = router;

@@ -112,7 +112,7 @@ const requestResetPassword = async (req, res) => {
           },
       });
 
-      const resetLink = `http://localhost:3000/reset-password/${resetToken}`;
+      const resetLink = `http://127.0.0.1:8000/reset-password?token=${resetToken}`;
       const mailOptions = {
           from: 'whadi611@gmail.com',
           to: email,
