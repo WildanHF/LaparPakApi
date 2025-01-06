@@ -10,6 +10,7 @@ const donationRoutes = require('./routes/donationRoutes');
 const contactUsRoutes = require('./routes/ContactUsRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
+const editProfileRoutes = require('./routes/EditProfileRoutes')
 
 dotenv.config();
 const app = express();
@@ -27,6 +28,7 @@ app.use('/api', campaignRoutes);
 app.use('/api', donationRoutes);
 app.use('/api', contactUsRoutes);
 app.use('/api', paymentRoutes);
+app.use('/api', editProfileRoutes);
 
 app.use('/api/admin', adminRoutes)
 
