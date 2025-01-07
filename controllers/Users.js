@@ -103,7 +103,7 @@ const requestResetPassword = async (req, res) => {
   
       await saveResetToken(email, resetToken, tokenExpiry);
   
-      const resetLink = `http://127.0.0.1:8000/reset-password?token=${resetToken}`;
+      const resetLink = `http://127.0.0.1:8000/api/reset-password?token=${resetToken}`;
   
       await transporter.sendMail({
         from: 'whadi611@gmail.com',
